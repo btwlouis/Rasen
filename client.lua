@@ -70,7 +70,7 @@ Citizen.CreateThread(function()
 		if CurrentAction then
 
 			if IsControlJustReleased(0, 38) then
-				if CurrentAction == 'dmvschool_menu' then
+				if CurrentAction == 'menu' then
 					openmenu()
 				end
 
@@ -84,7 +84,7 @@ end)
 
 AddEventHandler('rasen:hasEnteredMarker', function(zone)
 	if zone == 'rasen' then
-		CurrentAction     = 'dmvschool_menu'
+		CurrentAction     = 'menu'
 		CurrentActionData = {}
 	end
 end)
