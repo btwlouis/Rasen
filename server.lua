@@ -14,7 +14,7 @@ AddEventHandler("rasen:pay", function(points)
 	return
     end
 
-    if points > 10000
+    if points > 10000 then
 	print('rasen: ' .. xPlayer.identifier .. ' probably attempted to exploit the rasen script!')
 	return		
     end
